@@ -1,13 +1,16 @@
 .session-reservation-area {
   display: flex;
   align-items: center;
-  padding: 9rem 0;
-  text-align: center;
+  padding: 10% 0;
+  //   text-align: center;
+
+  //   label {
+  //     text-align
+  //   }
 }
 
 input,
 select {
-  font-family: 'Oswald', sans-serif;
   width: 100%;
   margin-top: 1rem;
   height: 3rem;

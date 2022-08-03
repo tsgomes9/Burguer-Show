@@ -34,7 +34,7 @@ function SessionBurguers() {
               <Card.Body>
                 <Card.Title className="card-combo-title">Combo 01</Card.Title>
                 <Badge>R$ 35,00</Badge>
-                <Card.Text>X-Salada + Molho + Batata Frita</Card.Text>
+                <Card.Text>X-Salada + Molho + Batata</Card.Text>
               </Card.Body>
             </Card>
           </Col>
@@ -56,7 +56,7 @@ function SessionBurguers() {
               <Card.Body>
                 <Card.Title className="card-combo-title">Combo 03</Card.Title>
                 <Badge>R$ 35,00</Badge>
-                <Card.Text>X-Salada + Molho + Batata Frita</Card.Text>
+                <Card.Text>X-Salada + Molho + Batata</Card.Text>
               </Card.Body>
             </Card>
           </Col>
@@ -67,7 +67,7 @@ function SessionBurguers() {
               <Card.Body>
                 <Card.Title className="card-combo-title">Combo 04</Card.Title>
                 <Badge>R$ 39,90</Badge>
-                <Card.Text>X-Salada + Molho + Batata Frita</Card.Text>
+                <Card.Text>X-Salada + Molho + Batata</Card.Text>
               </Card.Body>
             </Card>
           </Col>

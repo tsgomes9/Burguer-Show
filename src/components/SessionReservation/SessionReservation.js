@@ -22,50 +22,73 @@ function SessionReservation() {
     <div className="session-reservation-area" id="session-reservation">
       <Container>
         <div>
-          <Badge className="bg-warning mb-4">RESERVA</Badge>
-          <h1 className="session-reservation-title">FAÇA SUA RESERVA</h1>
+          <div className="text-center mb-4">
+            <Badge className="bg-warning mb-4">RESERVA</Badge>
+            <h1 className="session-reservation-title text-align-center">
+              FAÇA SUA RESERVA
+            </h1>
+          </div>
           <Row xs={1} sm={1} lg={2}>
             <Col>
-              <input type="text" placeholder="NOME"></input>
+              <label for="name">Nome</label>
+              <input className="m-0" type="text" id="name"></input>
             </Col>
             <Col>
-              <input type="email" placeholder="E-MAIL"></input>
+              <label for="email">E-mail</label>
+              <input className="m-0" type="email" id="email"></input>
             </Col>
           </Row>
-          <Row xs={2}>
+          <Row xs={2} className="mt-3">
             <Col>
-              <input type="date" min={dataAtual()}></input>
+              <label for="date">Data</label>
+
+              <input
+                className="m-0"
+                type="date"
+                min={dataAtual()}
+                id="date"
+              ></input>
             </Col>
             <Col>
+              <label for="hour">Horário</label>
+
               <input
+                className="m-0"
                 type="time"
                 min="12:00"
                 max="18:00"
-                placeholder="HORÁRIO"
+                id="hour"
               ></input>
             </Col>
           </Row>
 
-          <Row xs={1} sm={1} lg={2}>
+          <Row xs={1} sm={1} lg={2} className="mt-3">
             <Col>
-              <input type="number" min="1" placeholder="QUANTIDADE"></input>
+              <label for="quantity">Quantidade</label>
+
+              <input
+                className="m-0"
+                type="number"
+                min="1"
+                id="quantity"
+              ></input>
             </Col>
             <Col>
-              <select>
-                <option disabled selected>
-                  NECESSIDADES ESPECIAIS?
-                </option>
-                <option>SIM</option>
-                <option>NÃO</option>
+              <label for="special">Necessidades especiais?</label>
+              <select id="special" className="m-0">
+                <option>Sim</option>
+                <option>Não</option>
               </select>
             </Col>
           </Row>
-          <Button
-            variant="outline-warning"
-            className="session-reservation-button"
-          >
-            CONFIRMAR RESERVA
-          </Button>
+          <div className="text-center">
+            <Button
+              variant="outline-warning"
+              className="session-reservation-button"
+            >
+              CONFIRMAR RESERVA
+            </Button>
+          </div>
         </div>
       </Container>
     </div>
