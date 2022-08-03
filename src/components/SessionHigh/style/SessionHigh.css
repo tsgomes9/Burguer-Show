@@ -1,0 +1,41 @@
+.session-high-area {
+  padding: 8rem 0;
+}
+
+.card-high {
+  border: none;
+  height: 26rem;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 4px 4px 10px black;
+}
+
+.card-high02 {
+  border: none;
+  height: 12.48rem;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 4px 4px 10px black;
+}
+
+.card-high-title {
+  color: white;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.2rem;
+}
+
+.card-high-text {
+  margin: 0;
+  color: white;
+  font-family: "Roboto Slab", serif;
+  font-size: 2rem;
+  text-shadow: 4px 4px 4px black;
+}
+
+.card-high-text2 {
+  margin: 0;
+  color: white;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.2rem;
+  text-shadow: 4px 4px 4px black;
+}/*# sourceMappingURL=SessionHigh.css.map */

@@ -1,0 +1,24 @@
+.logo-area {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: 900;
+  margin-right: 2rem;
+  color: white;
+}
+.logo-area img {
+  height: 1rem;
+  margin-right: 0.5rem;
+}
+
+.navigation-items {
+  list-style: none;
+}
+
+.nav-bar-link:hover {
+  color: #ffc107;
+}
+
+.offcanvas-header button {
+  background-color: white;
+}/*# sourceMappingURL=NavigationBar.css.map */

@@ -1,0 +1,41 @@
+.session-contact-area01 {
+  //   height: 80vh;
+
+  padding: 8rem 0 2rem;
+}
+
+.session-contact-area02 {
+  display: flex;
+  justify-content: center;
+  color: white;
+  padding: 8% 0 4% 0;
+
+  h3 {
+    font-size: 1rem;
+  }
+}
+
+.session-contact-title {
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.session-contact-img {
+  height: 1.2rem;
+  margin-right: 1rem;
+}
+
+.session-contact-logo {
+  display: flex;
+  justify-content: center;
+}
+
+.session-contact-f {
+  margin: 4% 0 8% 0;
+  img {
+    height: 1.2rem;
+    width: 1.2rem;
+    margin: 1.2rem;
+  }
+}

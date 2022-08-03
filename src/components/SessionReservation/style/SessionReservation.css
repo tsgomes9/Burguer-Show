@@ -1,0 +1,29 @@
+.session-reservation-area {
+  display: flex;
+  align-items: center;
+  padding: 9rem 0;
+  text-align: center;
+}
+
+input,
+select {
+  font-family: "Oswald", sans-serif;
+  width: 100%;
+  margin-top: 1rem;
+  height: 3rem;
+  border: 1px solid rgb(209, 209, 209);
+  padding: 0 1rem;
+}
+
+.session-reservation-button {
+  font-family: "Oswald", sans-serif;
+  font-size: 1rem;
+  font-weight: bolder;
+  color: black;
+  padding: 0.6rem 4rem;
+  margin-top: 2rem;
+}
+
+.session-reservation-title {
+  font-family: "Roboto Slab", serif;
+}/*# sourceMappingURL=SessionReservation.css.map */

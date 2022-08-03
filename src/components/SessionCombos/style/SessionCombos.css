@@ -1,0 +1,22 @@
+.session-combos-area {
+  text-align: center;
+  padding: 6rem 0;
+}
+
+.card-combo-title {
+  font-family: "Roboto Slab", serif;
+  font-weight: bolder;
+}
+
+.card-combo-btn {
+  width: 5rem;
+}
+
+.session-combos-title {
+  display: flex;
+  justify-content: center;
+}
+
+.session-combos-title2 {
+  font-family: "Roboto Slab", serif;
+}/*# sourceMappingURL=SessionCombos.css.map */
