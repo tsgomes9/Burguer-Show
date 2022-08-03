@@ -73,7 +73,7 @@ function SessionReservation() {
                 id="quantity"
               ></input>
             </Col>
-            <Col>
+            <Col className="mt-3">
               <label for="special">Necessidades especiais?</label>
               <select id="special" className="m-0">
                 <option>Sim</option>
