@@ -62,8 +62,8 @@ function SessionReservation() {
             </Col>
           </Row>
 
-          <Row xs={1} sm={1} lg={2} className="mt-3">
-            <Col>
+          <Row xs={1} sm={1} lg={2}>
+            <Col className="mt-3">
               <label for="quantity">Quantidade</label>
 
               <input
