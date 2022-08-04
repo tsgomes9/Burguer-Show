@@ -1,7 +1,5 @@
 .session-reservation-area {
-  display: flex;
-  align-items: center;
-  padding: 10% 0;
+  padding: 8% 0 12%;
 }
 
 input,

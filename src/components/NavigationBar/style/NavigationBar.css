@@ -11,14 +11,17 @@
   margin-right: 0.5rem;
 }
 
-.navigation-items {
-  list-style: none;
+.navbar-button {
+  font-weight: 600;
+  padding: 0.7rem 2rem;
+  margin-inline: 0.5rem;
+  background: none;
+  border: 0px;
+  color: white;
 }
-
-.nav-bar-link:hover {
-  color: #ffc107;
-}
-
-.offcanvas-header button {
-  background-color: white;
+.navbar-button:hover {
+  border-radius: 1rem;
+  color: black;
+  background-color: #ffc107;
+  cursor: pointer;
 }/*# sourceMappingURL=NavigationBar.css.map */

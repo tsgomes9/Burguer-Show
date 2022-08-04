@@ -1,102 +1,115 @@
-import { useState } from 'react'
-
-import Container from 'react-bootstrap/Container'
-import Nav from 'react-bootstrap/Nav'
-import Navbar from 'react-bootstrap/Navbar'
-import Offcanvas from 'react-bootstrap/Offcanvas'
-
 import logo from '../../img/logo.png'
 import './style/NavigationBar.css'
 
-function NavigationBar() {
-  const [show, setShow] = useState(false)
+const Header = () => {
+  // Função scrollWin recebe um valor de id e faz scroll para sessão correspondente.
 
-  const toggleOffCanvas = () => {
-    setShow(!show)
-  }
-
-  const toggleOffCanvasLinks = () => {
+  // Função criada devido a necessidade de fechar o offcanvas e em seguida fazer
+  // a movimentação para a sessão correspondente
+  function scrollWin(e) {
     setTimeout(() => {
-      setShow(!show)
-    }, 1000)
+      //Replace para tornar o id igual ao da sessão correspondente
+      const element = document.getElementById(`${e.replace('Link', '')}`)
+      element.scrollIntoView()
+    }, 400)
   }
 
   return (
-    <div>
-      <Navbar
-        key="expand"
-        expand="lg"
-        className="text-light navbar-dark d-flex p-3 navbar-area"
-        bg="dark"
-        fixed="top"
-      >
-        <Container>
-          <a href="#session-header" className="text-decoration-none">
-            <div className="logo-area">
-              <div>
-                <img src={logo} alt="logo"></img>
-              </div>
-              <div>BURGUER SHOW</div>
-            </div>
+    <div className="navbar navbar-dark bg-dark fixed-top navbar-expand-lg">
+      <div className="container">
+        <div className="logo-area">
+          <a className="navbar-brand logo" href="#session-header">
+            <img src={logo} alt="logo burguer show" />
+            BURGUER SHOW
           </a>
-
-          <div className="ms-auto">
-            <Navbar.Toggle
-              aria-controls="offcanvasNavbar-expand-lg"
-              onClick={toggleOffCanvas}
-            />
-
-            <Navbar.Offcanvas
-              id="offcanvasNavbar-expand-lg"
-              aria-labelledby="offcanvasNavbarLabel-expand-lg"
-              placement="end"
-              show={show}
-              onHide={toggleOffCanvas}
+        </div>
+        <button
+          className="navbar-toggler "
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div
+          className="offcanvas offcanvas-end bg-dark"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div className="offcanvas-header">
+            <h5
+              className="offcanvas-title text-light"
+              id="offcanvasNavbarLabel"
             >
-              <div className="bg-dark text-light h-100">
-                <Offcanvas.Header closeButton className="offcanvas-header">
-                  <Offcanvas.Title id="offcanvasNavbarLabel-expand-lg">
-                    Menu principal
-                  </Offcanvas.Title>
-                </Offcanvas.Header>
+              Menu Principal
+            </h5>
 
-                <Offcanvas.Body>
-                  <Nav.Link
-                    className="nav-bar-link m-2"
-                    href="#session-high"
-                    onClick={toggleOffCanvasLinks}
-                  >
-                    Em alta
-                  </Nav.Link>
-                  <Nav.Link
-                    className="nav-bar-link m-2"
-                    href="#session-combos"
-                    onClick={toggleOffCanvasLinks}
-                  >
-                    Combos
-                  </Nav.Link>
-                  <Nav.Link
-                    className="nav-bar-link m-2"
-                    href="#session-reservation"
-                    onClick={toggleOffCanvasLinks}
-                  >
-                    Reservas
-                  </Nav.Link>
-                  <Nav.Link
-                    className="nav-bar-link m-2"
-                    href="#session-contact"
-                    onClick={toggleOffCanvasLinks}
-                  >
-                    Contatos
-                  </Nav.Link>
-                </Offcanvas.Body>
-              </div>
-            </Navbar.Offcanvas>
+            <button
+              type="button"
+              className="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
           </div>
-        </Container>
-      </Navbar>
+          <div className="offcanvas-body ">
+            <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li className="nav-item">
+                <button
+                  className="navbar-button"
+                  aria-current="page"
+                  onClick={(e) => scrollWin(e.target.id)}
+                  data-bs-target="offcanvas"
+                  data-bs-dismiss="offcanvas"
+                  id="session-highLink"
+                >
+                  Destaques
+                </button>
+              </li>
+              <li className="nav-item">
+                <button
+                  className="navbar-button"
+                  onClick={(e) => scrollWin(e.target.id)}
+                  data-bs-target="offcanvas"
+                  data-bs-dismiss="offcanvas"
+                >
+                  <div className="nav-style-item" id="session-combosLink">
+                    Combos
+                  </div>
+                </button>
+              </li>
+              <li className="nav-item">
+                <button
+                  className="navbar-button"
+                  onClick={(e) => scrollWin(e.target.id)}
+                  data-bs-target="offcanvas"
+                  data-bs-dismiss="offcanvas"
+                >
+                  <div className="nav-style-item" id="session-reservationLink">
+                    Reservas
+                  </div>
+                </button>
+              </li>
+              <li className="nav-item">
+                <button
+                  className="navbar-button"
+                  onClick={(e) => scrollWin(e.target.id)}
+                  data-bs-target="offcanvas"
+                  data-bs-dismiss="offcanvas"
+                >
+                  <div className="nav-style-item" id="session-contactLink">
+                    Contatos
+                  </div>
+                </button>
+              </li>
+            </ul>
+            {/* </div> */}
+          </div>
+        </div>
+      </div>
     </div>
   )
 }
 
-export default NavigationBar
+export default Header

@@ -3,9 +3,9 @@ import Col from 'react-bootstrap/esm/Col'
 import Container from 'react-bootstrap/esm/Container'
 
 import logo from '../../img/logo.png'
-import facebook from '../../img/facebook.png'
-import instagram from '../../img/instagram.png'
-import twitter from '../../img/twitter.png'
+// import facebook from '../../img/facebook.png'
+// import instagram from '../../img/instagram.png'
+// import twitter from '../../img/twitter.png'
 
 import './style/SessionContact.css'
 
@@ -67,13 +67,13 @@ function SessionContact() {
           </Col>
         </Row>
 
-        <Row className="bg-dark">
+        {/* <Row className="bg-dark">
           <div className="d-flex justify-content-center session-contact-f">
             <img src={twitter} alt="twitter" />
             <img src={instagram} alt="instagram" />
             <img src={facebook} alt="facebook" />
           </div>
-        </Row>
+        </Row> */}
       </Container>
     </div>
   )
